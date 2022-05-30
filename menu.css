@@ -1,0 +1,204 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Source+Sans+Pro:ital@0;1&display=swap');");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:-moz-placeholder,
+::placeholder {
+  color: #666;
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  cursor: auto;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  min-height: 200vh;
+}
+
+/*
+header {
+  display: block;
+}
+*/
+
+a,
+a:active,
+a:focus,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.button,
+button,
+input[type="submit"] {
+  border: 0;
+  color: #fff;
+  margin: 0;
+  outline: none;
+  padding: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#menu {
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 101;
+}
+
+#menu #logo {
+  display: inline-block;
+}
+
+#menu #menu-principal .main-navigation > li .nav-a {
+  cursor: pointer;
+  display: block;
+  padding: 24px 10px;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+#menu #menu-principal .sub-header {
+  top: -12px;
+}
+
+#menu #menu-principal .wrap-search {
+  display: block;
+  right: 15px;
+  transition: all 0.2s ease-in-out;
+  width: 310px;
+}
+
+#menu #menu-principal .wrap-search form {
+  background-color: #eee;
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#menu #menu-principal .wrap-search form input[type="text"] {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #000;
+  box-shadow: none;
+  color: #000;
+  display: block;
+  float: left;
+  font-size: 13px;
+  height: auto;
+  margin: 0;
+  padding: 9px 20px 9px 1px;
+  position: relative;
+  width: 100%;
+}
+
+.button::before,
+button::before,
+input[type="submit"]::before {
+  font-weight: 400;
+  margin-right: 4px;
+  opacity: 0.75;
+}
+
+#menu #menu-principal .wrap-search form .button-search {
+  background-color: transparent;
+  color: #000;
+  padding: 6px 2px 6px 10px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+#menu #menu-principal .topNav {
+  margin-top: 15px;
+}
+
+#menu #menu-principal .topNav .topnav-link {
+  margin-right: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+#menu #menu-principal .topNav .topnav-link:last-child {
+  margin-right: 0;
+}
+
+#menu #menu-principal .main-navigation > li {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+
+/* Media queries */
+@media only screen and (min-width: 40.0625em) {
+  .button,
+  button {
+    display: inline-block;
+  }
+}
+
+/** Utility classes **/
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-gray-300 {
+  color: #333;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-title {
+  font-family: Quicksand, sans-serif;
+}
+
+.pt-3\.5 {
+  padding-top: 0.875rem;
+}
