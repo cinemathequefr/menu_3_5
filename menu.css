@@ -75,6 +75,11 @@ main {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+  transition: 0.15s;
+}
+
+#menu > ul.zone2.primary-menu > li:hover {
+  color: #6af7d6;
 }
 
 .logo > a {
@@ -83,6 +88,7 @@ main {
 
 .logo > a > svg {
   width: 300px;
+  fill: black;
 }
 
 /* Mode narrow */
