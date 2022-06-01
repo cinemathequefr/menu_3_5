@@ -21,6 +21,8 @@ main {
 }
 
 #menu {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -98,8 +100,6 @@ main {
 
 /* Mode mini */
 #menu.mini {
-  position: sticky;
-  top: 0;
   height: 60px;
 }
 
@@ -122,9 +122,10 @@ ul {
   list-style-type: none;
 }
 
+/* Contrôles de la démo */
 .ctrl {
   position: fixed;
-  bottom: 12px;
+  bottom: 24px;
   left: 12px;
 }
 
@@ -132,4 +133,8 @@ label {
   padding: 12px;
   background-color: #ccc;
   margin: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 2px;
 }
